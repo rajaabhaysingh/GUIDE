@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapView = mapFragment.getView();
 
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(MainActivity.this);
-        Places.initialize(MainActivity.this, "AIzaSyD66Fg36iZmtI08p5Ij3R_gN0T_xKyCFoQ");
+        Places.initialize(MainActivity.this, getString(R.string.google_map_api));
         placesClient = Places.createClient(this);
         final AutocompleteSessionToken token = AutocompleteSessionToken.newInstance();
 
